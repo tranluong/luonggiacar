@@ -15,5 +15,9 @@
         get_template_part('templates/content', 'contact');
     elseif (basename($url) === 'pricing') :
         get_template_part('templates/content', 'price');
+    elseif (basename($url) === 'about') :
+        get_template_part('templates/content', 'about');
+    elseif (basename($url) === 'car') :
+        get_template_part('templates/content', 'car');
     endif;
 endif; ?>
