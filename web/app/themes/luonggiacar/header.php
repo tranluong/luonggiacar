@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,18 +38,18 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="pricing" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="car" class="nav-link">Our Car</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
+                <li class="nav-item active"><a href="/" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item"><a href="dich-vu" class="nav-link">Dịch vụ</a></li>
+                <li class="nav-item"><a href="pricing" class="nav-link">Bảng giá</a></li>
+                <li class="nav-item"><a href="car" class="nav-link">Danh sách xe</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact" class="nav-link">Liên hệ</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- END nav -->
-
+<?php if (is_front_page()) : ?>
 <div class="hero-wrap" style="background-image: url('app/assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -105,6 +102,19 @@
         </div>
     </div>
 </div>
+<?php else : ?>
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/app/assets/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+            <div class="col-md-9 ftco-animate pb-5">
+                <p class="breadcrumbs"><span class="mr-2"><a href="/">Trang chủ <i class="ion-ios-arrow-forward"></i></a></span> <span>Dịch vụ<i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread">Dịch vụ của chúng tôi</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
 
 <!--<section class="ftco-section ftco-no-pb ftco-no-pt">-->
 <!--    <div class="container">-->
