@@ -4,7 +4,7 @@ namespace LuongWP\Common;
 
 /**
  * Class RepeaterWidget
- * @package MatiWP\Common
+ * @package LuongWP\Common
  */
 abstract class RepeaterWidget extends SingularWidget {
 	protected $repeater_fields = [];

@@ -81,6 +81,22 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/google-map.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        //Active menu when reload
+//        var fullpath = window.location.pathname;
+//        var filename = fullpath.replace('/', '');
+//        if (filename != '') {
+//            $('ul li').removeClass("active");
+//        }
+//        var currentLink=$('a[href="' + filename + '"]');
+//        currentLink.parent().addClass("active");
+        $('ul li').click(function(){
+            $('ul li').removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
 
 </body>
 </html>

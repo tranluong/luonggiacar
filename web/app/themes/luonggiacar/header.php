@@ -39,11 +39,12 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="/" class="nav-link">Trang chủ</a></li>
-                <li class="nav-item"><a href="dich-vu" class="nav-link">Dịch vụ</a></li>
-                <li class="nav-item"><a href="pricing" class="nav-link">Bảng giá</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="#service" class="nav-link">Dịch vụ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Bảng giá</a></li>
                 <li class="nav-item"><a href="car" class="nav-link">Danh sách xe</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="contact" class="nav-link">Liên hệ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
             </ul>
         </div>
     </div>
@@ -108,8 +109,8 @@
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="/">Trang chủ <i class="ion-ios-arrow-forward"></i></a></span> <span>Dịch vụ<i class="ion-ios-arrow-forward"></i></span></p>
-                <h1 class="mb-3 bread">Dịch vụ của chúng tôi</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="/">Trang chủ <i class="ion-ios-arrow-forward"></i></a></span> <span><?php the_title(); ?><i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-3 bread"><?php the_title(); ?></h1>
             </div>
         </div>
     </div>
