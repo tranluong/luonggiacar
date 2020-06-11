@@ -40,17 +40,17 @@ class LuongWP_HowItWork_Widget extends RepeaterWidget
                     </div>
                 </div>
                 <div class="row">
-                <?php for ( $i = 0; $i < $total; $i ++ ) : ?>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services services-2">
-                            <div class="media-body py-md-4 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"><span class="<?php $this->val( $inst, 'icon', $i ); ?>"></span></div>
-                                <h3><?php $this->val( $inst, 'title_howitwork', $i ); ?></h3>
-                                <p><?php $this->val( $inst, 'title_desc', $i ); ?></p>
+                    <?php for ( $i = 0; $i < $total; $i ++ ) : ?>
+                        <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services services-2">
+                                <div class="media-body py-md-4 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center"><span class="<?php $this->val( $inst, 'icon', $i ); ?>"></span></div>
+                                    <h3><?php $this->val( $inst, 'title_howitwork', $i ); ?></h3>
+                                    <p><?php $this->val( $inst, 'title_desc', $i ); ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php endfor; ?>
+                    <?php endfor; ?>
                 </div>
             </div>
         </section>

@@ -361,6 +361,10 @@ mark,
   padding-left: 0;
   list-style: none; }
 
+.service-info {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .list-inline {
   padding-left: 0;
   list-style: none; }
@@ -9047,7 +9051,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -9064,8 +9068,8 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #000;
-  padding: 7em 0; }
+  background: #053b69;
+  padding: 1em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }

@@ -10,6 +10,7 @@ require_once 'core/RepeaterWidget.php';
 require_once 'lib/widgets/service.php';
 require_once 'lib/widgets/about.php';
 require_once 'lib/widgets/howitwork.php';
+require_once 'lib/widgets/happyclient.php';
 
 function sidebar_widgets_init() {
 
