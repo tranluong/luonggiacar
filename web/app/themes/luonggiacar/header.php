@@ -31,7 +31,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/">Auto<span>road</span></a>
+        <a class="navbar-brand" href="/">HUNA-<span>LUONGGIACAR</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -39,10 +39,10 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="/" class="nav-link">Trang chủ</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">Giới thiệu</a></li>
-                <li class="nav-item"><a href="#service" class="nav-link">Dịch vụ</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Bảng giá</a></li>
-                <li class="nav-item"><a href="car" class="nav-link">Danh sách xe</a></li>
+                <li class="nav-item"><a href="/#about" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="thu-tuc-thue-xe/" class="nav-link">Thủ tục thuê xe</a></li>
+                <li class="nav-item"><a href="bang-gia/" class="nav-link">Bảng giá</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Danh sách xe</a></li>
 <!--                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>-->
                 <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
             </ul>
@@ -106,7 +106,7 @@
                             <input type="submit" value="Đặt ngay" class="btn btn-primary py-3 px-4">
                         </div>
                         <div class="form-group mr-2">
-                            <a href="tel:0933324679" style="animation-duration: 1s; animation-iteration-count: infinite;" class="btn btn-danger py-3 px-4 animated swing">0933324679</a>
+                            <a href="tel:0933324679" style="animation-duration: 1s;" class="btn btn-danger py-3 px-4 animated swing infinite">0933324679</a>
                         </div>
                     </div>
                 </form>

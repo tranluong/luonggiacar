@@ -11,6 +11,8 @@ require_once 'lib/widgets/service.php';
 require_once 'lib/widgets/about.php';
 require_once 'lib/widgets/howitwork.php';
 require_once 'lib/widgets/happyclient.php';
+require_once 'lib/widgets/price.php';
+require_once 'lib/widgets/rulebookingcar.php';
 
 function sidebar_widgets_init() {
 

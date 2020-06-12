@@ -16,8 +16,10 @@
                 <div class="ftco-footer-widget mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Thông tin</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#about" class="py-2 d-block">Giới thiệu</a></li>
-                        <li><a href="#service" class="py-2 d-block">Dịch vụ</a></li>
+                        <li><a href="/#about" class="py-2 d-block">Giới thiệu</a></li>
+                        <li><a href="/#service" class="py-2 d-block">Dịch vụ</a></li>
+                        <li><a href="#" class="py-2 d-block">Thủ tục thuê xe</a></li>
+                        <li><a href="#" class="py-2 d-block">Bảng giá</a></li>
                     </ul>
                 </div>
             </div>
@@ -80,17 +82,42 @@
 <script>
     $(document).ready(function(){
         //Active menu when reload
-//        var fullpath = window.location.pathname;
-//        var filename = fullpath.replace('/', '');
-//        if (filename != '') {
-//            $('ul li').removeClass("active");
-//        }
-//        var currentLink=$('a[href="' + filename + '"]');
-//        currentLink.parent().addClass("active");
+        var fullpath = window.location.pathname; // location.pathname to get link and active when reload page
+        var filename = fullpath.replace('/', '');
+        // if it is not home page
+        if (filename != '') {
+            $('ul li').removeClass("active");
+            var currentLink=$('a[href="' + filename + '"]');
+            currentLink.parent().addClass("active");
+        }
+
+        // Active menu not reload page
+        var currentLinkOnFooter = '';
         $('ul li').click(function(){
             $('ul li').removeClass("active");
             $(this).addClass("active");
+//            // If click menu on footer, it will find and active menu on TOP
+
+            if ($(this).find('a').attr('href') == '/#about' ) {
+                currentLinkOnFooter = $('a[href="/#about"]');
+                currentLinkOnFooter.parent().addClass("active");
+            }
+            if ($(this).find('a').attr('href') == '/#service') {
+                currentLinkOnFooter = $('a[href="/"]');
+                currentLinkOnFooter.parent().addClass("active");
+            }
         });
+
+        // Scroll to position when reloading page
+        scrollToPosition = window.location.hash; // location.hash to get link when using #id to scroll without reload page
+        if (scrollToPosition != '') {
+            $('ul li').removeClass("active");
+            currentLinkOnFooter = $('a[href="/'+scrollToPosition+'"]');
+            currentLinkOnFooter.parent().addClass("active");
+            $('html, body').animate({
+                scrollTop: $(scrollToPosition).offset().top
+            }, 1000);
+        }
     });
 </script>
 
