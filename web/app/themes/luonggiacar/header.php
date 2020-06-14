@@ -42,7 +42,7 @@
                 <li class="nav-item"><a href="/#about" class="nav-link">Giới thiệu</a></li>
                 <li class="nav-item"><a href="thu-tuc-thue-xe/" class="nav-link">Thủ tục thuê xe</a></li>
                 <li class="nav-item"><a href="bang-gia/" class="nav-link">Bảng giá</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Danh sách xe</a></li>
+<!--                <li class="nav-item"><a href="#" class="nav-link">Danh sách xe</a></li>-->
 <!--                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>-->
                 <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
             </ul>
@@ -100,6 +100,13 @@
                     <div class="form-group">
                         <label for="" class="label">Thời gian nhận xe</label>
                         <input type="text" class="form-control" id="time_pick" placeholder="Thời gian nhận xe">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label">Bạn đi xe mấy chỗ ?</label>
+                        <select name="capacity">
+                            <option>4 chỗ</option>
+                            <option>7 chỗ</option>
+                        </select>
                     </div>
                     <div class="d-flex">
                         <div class="form-group mr-2">

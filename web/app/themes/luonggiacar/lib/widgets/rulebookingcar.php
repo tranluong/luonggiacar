@@ -14,41 +14,32 @@ class LuongWP_Rule_Booking_Car_Widget extends RepeaterWidget
         ], [], 3 );
 
         $this
-            ->regField( 'title_color', 'Tiêu đề có màu', '' )
-            ->regField( 'title', 'Tiêu đề', '' )
-            ->regRepField( 'icon', 'Tên Icon', '' )
-            ->regRepField( 'title_service', 'Tên dịch vụ', '' )
-            ->regRepField( 'title_service_desc', 'Mô tả', '', 'textarea' );
+            ->regField( 'rule_type', 'Loại thủ tục', '' )
+            ->regRepField( 'rule_title', 'Tên thủ tục', '' )
+            ->regRepField( 'rule_desc', 'Mô tả', '', 'textarea' );
     }
 
     //Hien thi du lieu ra ben ngoai FE
     function widget($args, $inst)
     {
         $total = $this->getTotalGroups( $inst );
+        $rule_type = $this->getVal( $inst, 'rule_type' );
         ?>
         <section class="ftco-section services-section">
             <div class="container">
                 <div class="row" style="padding-bottom: 20px;">
-                    <span style="background-color: rgb(245, 227, 8); padding: 1em; border-top-right-radius: 40px; border-bottom-right-radius: 40px; color: #000; text-transform: uppercase; font-size: 25px">Thủ tục thuê xe tại Huna-Luonggiacar gồm có:</span>
+                    <span style="background-color: rgb(245, 227, 8); padding: 1em; border-top-right-radius: 40px; border-bottom-right-radius: 40px; color: #000; text-transform: uppercase; font-size: 25px"><?php echo $rule_type; ?></span>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <span style="font-weight: 700;">1. Giấy tờ cần xuất trình</span>
+                <?php for ($i = 0; $i < $total; $i ++) : ?>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="font-weight: 700;"><?php $this->val($inst, 'rule_title', $i); ?></span>
+                        </div>
+                        <div class="col-md-12">
+                            <p><?php $this->val($inst, 'rule_desc', $i); ?></p>
+                        </div>
                     </div>
-                    <div class="col-md-12" style="padding: 25px;">
-                            <p>- CMND hoặc Passport & Bằng lái B2 </p>
-                            <p>- Sổ hộ khẩu hoặc KT3 </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <span style="font-weight: 700;">2. Tài sản thế chấp</span>
-                    </div>
-                    <div class="col-md-12" style="padding: 25px;">
-                        <p>- CMND hoặc Passport & Bằng lái B2 </p>
-                        <p>- Sổ hộ khẩu hoặc KT3 </p>
-                    </div>
-                </div>
+                <?php endfor; ?>
             </div>
         </section>
 <?php
