@@ -44,20 +44,14 @@
                 <li class="nav-item"><a href="bang-gia/" class="nav-link">Bảng giá</a></li>
 <!--                <li class="nav-item"><a href="#" class="nav-link">Danh sách xe</a></li>-->
 <!--                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>-->
-                <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                <li class="nav-item"><a href="lien-he/" class="nav-link">Liên hệ</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- END nav -->
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-lg-6"></div>-->
-<!--        <div class="col-lg-6">sssssssssss</div>-->
-<!--    </div>-->
-<!--</div>-->
 <?php if (is_front_page()) : ?>
-<div class="hero-wrap" style="background-image: url('app/assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap" style="background-image: url('/app/assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
