@@ -39,10 +39,10 @@ class LuongWP_Contact_Widget extends RepeaterWidget
                 <div class="row block-9 justify-content-center">
                     <div class="col-md-8 mb-md-5">
                         <h3 class="text-center"><?php if (!empty($title)) : echo $title;endif; ?></h3>
-                        <form action="#" class="bg-light p-5 contact-form">
+                        <form action="" id="contact-form" method="post" class="bg-light p-5 contact-form">
                             <input type="hidden" name="form-id"
                                    value="<?php echo wp_create_nonce( 'luongwp-contact' ) ?>">
-                            <input type="hidden" name="action" value="add_message">
+                            <input type="hidden" name="action" value="send_message">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="contact_name" placeholder="Tên">
                             </div>
@@ -50,7 +50,7 @@ class LuongWP_Contact_Widget extends RepeaterWidget
                                 <input type="text" class="form-control" name="contact_email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="contact_subject" placeholder="Chủ đề">
+                                <input type="text" class="form-control" name="contact_phone" placeholder="Số điện thoại">
                             </div>
                             <div class="form-group">
                                 <textarea name="contact_content" id="" cols="30" rows="7" class="form-control" placeholder="Nội dụng..."></textarea>
