@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3cb8f5c7a0df9416a44e21883b665c7",
+    "content-hash": "9a081505e8e3b26e5dc1631e9c1c35aa",
     "packages": [
         {
             "name": "composer/installers",
@@ -134,6 +134,32 @@
             "time": "2020-04-07T06:57:05+00:00"
         },
         {
+            "name": "matidev/types",
+            "version": "2.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matidev/types.git",
+                "reference": "c3b2752125a28ac61e7ee589be1775ce1673606f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matidev/types/zipball/c3b2752125a28ac61e7ee589be1775ce1673606f",
+                "reference": "c3b2752125a28ac61e7ee589be1775ce1673606f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.4"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Toolset"
+                }
+            ],
+            "time": "2020-06-12T14:40:46+00:00"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v1.2.0",
             "source": {
@@ -233,16 +259,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.4",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.4"
+                "reference": "5.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4",
-                "reference": "5.4"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.4.2",
+                "reference": "5.4.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -266,7 +292,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-03-31T20:06:05+00:00"
+            "time": "2020-06-10T21:43:59+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -562,6 +588,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/email-log",
+            "version": "2.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/email-log/",
+                "reference": "tags/2.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/email-log.2.3.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/email-log/"
         },
         {
             "name": "wpackagist-plugin/siteorigin-panels",

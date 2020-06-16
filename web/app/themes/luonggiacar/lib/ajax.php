@@ -2,19 +2,17 @@
 
 function luongwp_send_message_callback() {
 	$nonce     = $_POST['form-id'];
-	$full_name = $_POST['cf-full-name'];
-	$email     = $_POST['cf-email'];
-	$phone     = $_POST['cf-phone'];
-	$address   = $_POST['cf-address'];
-	$message   = $_POST['cf-message'];
+	$full_name = $_POST['contact_name'];
+	$email     = $_POST['contact_email'];
+	$phone     = $_POST['contact_phone'];
+	$content   = $_POST['contact_content'];
 
-	if ( empty( $nonce ) || ! wp_verify_nonce( $nonce, 'matiwp-contact-us' ) || empty( $full_name )
-	     || empty( $email ) || ! is_email( $email ) || empty( $phone ) || empty( $message ) ) {
+	if ( empty( $nonce ) || ! wp_verify_nonce( $nonce, 'luongwp-contact' ) || empty( $full_name )
+	     || empty( $email ) || ! is_email( $email ) || empty( $phone ) || empty( $content ) ) {
 		wp_send_json_error( [ 'message' => 'Invalid request.' ] );
 	}
 
-	$address = ! empty( $address ) ? $address : 'n/a';
-	$message = esc_html( $message );
+	$content = esc_html( $content );
 	$ip      = $_SERVER['REMOTE_ADDR'] ?? 'n/a';
 	$browser = $_SERVER['HTTP_USER_AGENT'] ?? 'n/a';
 	$meta    = "IP Address: $ip\r\nBrowser: $browser";
@@ -33,17 +31,16 @@ function luongwp_send_message_callback() {
 			$full_name,
 			$email,
 			$phone,
-			$address,
-			$message,
+			$content,
 			wpautop( $meta )
 		],
 		file_get_contents( locate_template( 'templates/emails/contact-message.html' ) )
 	);
 
 	// Send email
-//	$admin_email = get_option( MATIWP_EMAIL_ADMIN );
+	$admin_email = get_option('company_email_web' );
 
-//	$status = luongwp_sent_email( $admin_email, $subject, $body );
+	$status = luongwp_sent_email( $admin_email, $subject, $body );
 
 	// Save DB
 //	$save_db = get_option( MATIWP_SAVE_CONTACT_MESSAGE );

@@ -57,6 +57,8 @@ class LuongWP_Contact_Widget extends RepeaterWidget
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Gửi" class="btn btn-primary py-3 px-5">
+                                <span id="contact-form-result" style="display: none"
+                                      class="pt-2 pt-md-0"></span>
                             </div>
                         </form>
                     </div>

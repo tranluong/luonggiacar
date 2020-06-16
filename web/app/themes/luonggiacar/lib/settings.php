@@ -1,4 +1,5 @@
 <?php
+namespace LuongWP\Settings;
 
 function luongwp_settings_menu_item() {
     add_menu_page(  'LGC Settings',  'LGC Settings', 'manage_options', strtolower( LUONGWP_ABBR ) . '-settings', __NAMESPACE__ . '\\theme_settings_page', 'dashicons-forms', '3' );
@@ -10,24 +11,24 @@ function display_theme_panel_fields() {
     //Group Company
     add_settings_section( 'company-section', 'Thông tin công ty', null, 'theme-options' );
     add_settings_field( 'company_name_web', 'Tên công ty', 'LuongWP\Common\SettingFields::displayInput', 'theme-options', 'company-section', [
-        'name' => 'Tên công ty',
+        'name' => 'company_name_web',
         'note' => 'Can use HTML code here.'
     ] );
 
     add_settings_field( 'company_address_web', 'Địa chỉ', 'LuongWP\Common\SettingFields::displayInput', 'theme-options', 'company-section', [
-        'name' => 'Địa chỉ',
+        'name' => 'company_address_web',
         'type' => 'textarea',
         'rows'  => '5',
         'note' => 'Can use HTML code here.'
     ] );
 
     add_settings_field( 'company_phone_web', 'Số điện thoại', 'LuongWP\Common\SettingFields::displayInput', 'theme-options', 'company-section', [
-        'name' => 'Số điện thoại',
+        'name' => 'company_phone_web',
         'note' => 'Can use HTML code here.'
     ] );
 
     add_settings_field( 'company_email_web', 'Email', 'LuongWP\Common\SettingFields::displayInput', 'theme-options', 'company-section', [
-        'name' => 'Email',
+        'name' => 'company_email_web',
         'note' => 'Can use HTML code here.'
     ] );
 

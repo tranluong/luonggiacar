@@ -1,6 +1,7 @@
 <?php
 
 require_once 'lib/defines.php';
+require_once 'lib/ajax.php';
 
 require_once 'lib/settings.php';
 

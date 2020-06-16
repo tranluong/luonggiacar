@@ -41,7 +41,7 @@
                         <ul>
                             <li class="service-info"><span class="icon icon-map-marker"></span><span class="text">Lô B, đường C8, chung cư Tây Thạnh, phường Tây Thạnh, quận Tân Phú TP Hồ Chí Minh</span></li>
                             <li class="service-info"><a href="tel:0933324679"><span class="icon icon-phone"></span><span class="text"><?php echo get_option( 'company_phone_web' ); ?></span></a></li>
-                            <li class="service-info"><a href="mailto:luonggiacar@gmail.com"></a><span class="icon icon-envelope"></span><span class="text">luonggiacar@gmail.com</span></li>
+                            <li class="service-info"><a href="mailto:luonggiacar@gmail.com"></a><span class="icon icon-envelope"></span><span class="text"><?php echo get_option( 'company_email_web' ); ?></span></li>
                         </ul>
                     </div>
                 </div>
@@ -78,6 +78,7 @@
 <script src="<?php echo LUONGWP_ASSETS; ?>js/scrollax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/google-map.js"></script>
+<script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.validate.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/main.js"></script>
 <script>
     $(document).ready(function(){

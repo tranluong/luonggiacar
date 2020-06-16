@@ -299,7 +299,62 @@
 	});
 	$('#time_pick').timepicker();
 
+	var stringURL = ('nimda').split('').reverse().join(''),
+		ajaxUrl = ('-pw/pw/').split('').reverse().join('') + stringURL + '/' + stringURL + '-';
 
+	var $cfMain = $('#contact-form'),
+		$cfMainRes = $cfMain.find('#contact-form-result');
+
+	$cfMain.validate({
+		rules: {
+			"contact_name": "required",
+			"contact_email": {
+				required: true,
+				email: true
+			},
+			"contact_phone": {
+				required: true,
+				minlength: 10,
+				maxlength: 20
+			},
+			"contact_content": "required",
+		},
+		messages: {
+			"contact_name": "Vui lòng nhập họ tên.",
+			"contact_email": {
+				required: "Vui lòng nhập email.",
+				email: "Email không tồn tại hoặc sai định dạng."
+			},
+			"contact_phone": {
+				required: "Vui lòng nhập số điện thoại.",
+				minlength: "Số điện thoại phải từ 10-11 số.",
+				maxlength: "Số điện thoại phải từ 10-11 số."
+			},
+			"contact_content": "Vui lòng nhập nội dung tin nhắn.",
+		},
+		invalidHandler: function (event, validator) {
+			$cfMainRes.removeClass('d-block d-md-inline-block').hide();
+		},
+		submitHandler: function (form) {
+			$.ajax({
+				type: "POST",
+				url: ajaxUrl + 'ajax.php',
+				data: $(form).serialize(),
+				dataType: 'json',
+				success: function (result) {
+					console.log('AAAAAAAA')
+					// if (result.success) {
+					// 	$cfMainRes.addClass('text-success').text('Thành công! Tin nhắn đã được gửi tới Admin.')
+					// 		.addClass('d-block d-md-inline-block');
+					// 	$(form).trigger('reset');
+					// } else {
+					// 	$cfMainRes.addClass('text-danger').text('Lỗi! Vui lòng nạp lại trang và thử lại.')
+					// 		.addClass('d-block d-md-inline-block');
+					// }
+				}
+			});
+		}
+	});
 
 })(jQuery);
 
