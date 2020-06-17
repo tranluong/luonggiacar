@@ -26,13 +26,13 @@ class LuongWP_Contact_Widget extends RepeaterWidget
         $url = $this->getVal( $inst, 'contact_map_url' );
         ?>
         <section class="ftco-section contact-section">
-            <div class="container">
+            <div class="container-wrap">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                             <div class="mapouter">
                                 <div class="gmap_canvas">
                                     <iframe width=100% height="100%" id="gmap_canvas" src="<?php if (!empty($url)) : echo $url;endif; ?>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org"></a></div>
-                                <style>.mapouter{position:relative;text-align:right;height:500px;width:900px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:900px;}</style>
+                                <style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style>
                             </div>
                     </div>
                 </div>

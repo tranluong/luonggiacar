@@ -39,7 +39,7 @@
                     <h2 class="ftco-heading-2">Liên hệ</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li class="service-info"><span class="icon icon-map-marker"></span><span class="text">Lô B, đường C8, chung cư Tây Thạnh, phường Tây Thạnh, quận Tân Phú TP Hồ Chí Minh</span></li>
+                            <li class="service-info"><span class="icon icon-map-marker"></span><span class="text"><?php echo get_option('company_address_web') ?></span></li>
                             <li class="service-info"><a href="tel:0933324679"><span class="icon icon-phone"></span><span class="text"><?php echo get_option( 'company_phone_web' ); ?></span></a></li>
                             <li class="service-info"><a href="mailto:luonggiacar@gmail.com"></a><span class="icon icon-envelope"></span><span class="text"><?php echo get_option( 'company_email_web' ); ?></span></li>
                         </ul>
@@ -62,14 +62,14 @@
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-<script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.min.js"></script>
+<script src="<?php echo LUONGWP_STATIC; ?>jquery/dist/jquery.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery-migrate-3.0.1.min.js"></script>
-<script src="<?php echo LUONGWP_ASSETS; ?>js/popper.min.js"></script>
+<script src="<?php echo LUONGWP_STATIC; ?>popper.js/dist/popper.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/bootstrap.min.js"></script>
-<script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.easing.1.3.js"></script>
+<script src="<?php echo LUONGWP_STATIC; ?>jquery.easing/jquery.easing.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.waypoints.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.stellar.min.js"></script>
-<script src="<?php echo LUONGWP_ASSETS; ?>js/owl.carousel.min.js"></script>
+<script src="<?php echo LUONGWP_STATIC; ?>owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/aos.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.animateNumber.min.js"></script>
@@ -78,7 +78,7 @@
 <script src="<?php echo LUONGWP_ASSETS; ?>js/scrollax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/google-map.js"></script>
-<script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.validate.min.js"></script>
+<script src="<?php echo LUONGWP_STATIC; ?>jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/main.js"></script>
 <script>
     $(document).ready(function(){

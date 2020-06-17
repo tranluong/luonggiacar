@@ -342,15 +342,15 @@
 				data: $(form).serialize(),
 				dataType: 'json',
 				success: function (result) {
-					console.log('AAAAAAAA')
-					// if (result.success) {
-					// 	$cfMainRes.addClass('text-success').text('Thành công! Tin nhắn đã được gửi tới Admin.')
-					// 		.addClass('d-block d-md-inline-block');
-					// 	$(form).trigger('reset');
-					// } else {
-					// 	$cfMainRes.addClass('text-danger').text('Lỗi! Vui lòng nạp lại trang và thử lại.')
-					// 		.addClass('d-block d-md-inline-block');
-					// }
+					// console.log('AAAAAAAA')
+					if (result.success) {
+						$cfMainRes.addClass('text-success').text('Thành công! Tin nhắn đã được gửi tới Admin.')
+							.addClass('d-block d-md-inline-block');
+						$(form).trigger('reset');
+					} else {
+						$cfMainRes.addClass('text-danger').text('Lỗi! Vui lòng nạp lại trang và thử lại.')
+							.addClass('d-block d-md-inline-block');
+					}
 				}
 			});
 		}

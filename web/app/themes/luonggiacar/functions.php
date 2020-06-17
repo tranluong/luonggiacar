@@ -17,6 +17,7 @@ require_once 'lib/widgets/happyclient.php';
 require_once 'lib/widgets/price.php';
 require_once 'lib/widgets/rulebookingcar.php';
 require_once 'lib/widgets/contact.php';
+require_once 'lib/widgets/cars.php';
 
 function sidebar_widgets_init() {
 
