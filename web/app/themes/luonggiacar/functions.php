@@ -4,6 +4,7 @@ require_once 'lib/defines.php';
 require_once 'lib/ajax.php';
 
 require_once 'lib/settings.php';
+require_once 'lib/products.php';
 
 require_once 'core/Utils.php';
 require_once 'core/SettingFields.php';
@@ -31,3 +32,36 @@ function sidebar_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'sidebar_widgets_init' );
+
+// change title name in column to new name and sort column position
+add_filter('manage_car_posts_columns', 'my_columns_head');
+function my_columns_head($posts_columns) {
+    $posts_columns['title'] = 'Tên xe';
+//    $posts_columns['date'] = 'Ngày tạo';
+//    var_dump($posts_columns);
+//    $crunchify_columns = array();
+//    $categories = 'date';
+//    $title = 'title';
+//    foreach($posts_columns as $key => $value) {
+//        if ($key==$title){
+//            $crunchify_columns[$categories] = $categories;
+//        }
+//        $crunchify_columns[$key] = $value;
+//    }
+//    return $crunchify_columns;
+    return $posts_columns;
+}
+
+//Add rows data  column namewith by post_id
+//add_action( 'manage_car_posts_custom_column' , 'my_custom_column', 10, 2 );
+//function my_custom_column($column, $post_id ){
+//    var_dump(get_post_custom( $post_id ));
+//    $cars = get_post_custom( $post_id ); // or get_post_meta($post_id, 'wpcf-car_capacity', true);
+//    $capacity = $cars[0]['wpcf-car_name'];
+//    switch ( $column ) {
+//        case 'test':
+//            echo $capacity;
+//            break;
+//    }
+//}
+

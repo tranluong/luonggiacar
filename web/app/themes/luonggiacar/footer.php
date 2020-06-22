@@ -40,8 +40,8 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li class="service-info"><span class="icon icon-map-marker"></span><span class="text"><?php echo get_option('company_address_web') ?></span></li>
-                            <li class="service-info"><a href="tel:0933324679"><span class="icon icon-phone"></span><span class="text"><?php echo get_option( 'company_phone_web' ); ?></span></a></li>
-                            <li class="service-info"><a href="mailto:luonggiacar@gmail.com"></a><span class="icon icon-envelope"></span><span class="text"><?php echo get_option( 'company_email_web' ); ?></span></li>
+                            <li class="service-info"><a href="tel:<?php echo get_option( 'company_phone_web' ); ?>"><span class="icon icon-phone"></span><span class="text"><?php echo get_option( 'company_phone_web' ); ?></span></a></li>
+                            <li class="service-info"><a href="mailto:<?php echo get_option( 'company_email_web' ); ?>"></a><span class="icon icon-envelope"></span><span class="text"><?php echo get_option( 'company_email_web' ); ?></span></li>
                         </ul>
                     </div>
                 </div>
