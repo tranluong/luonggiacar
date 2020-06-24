@@ -20,7 +20,9 @@ function luongwp_get_product_by_id( $car_id ) {
     $car_capacity = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_CAPACITY, true);
     $car_transmis = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_TRANSMISS, true);
     $car_price = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_PRICE, true);
-    $term_list = wp_get_post_terms( $car_id, 'car-type', array( 'fields' => 'all' ) );
+    $car_year = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_YEAR, true);
+    $car_fuel = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_FUEL, true);
+    $term_list = wp_get_post_terms( $car_id, LUONGWP_TAXONOMY_CAR_TYPE, array( 'fields' => 'all' ) );
     $car_image = empty($car_image) ? LUONGWP_NO_IMAGE : $car_image;
 
     return [
@@ -29,7 +31,9 @@ function luongwp_get_product_by_id( $car_id ) {
         'car_capacity' => $car_capacity,
         'car_transmis' => $car_transmis,
         'car_price' => $car_price,
-        'car_type' => $term_list[0]->name
+        'car_type' => $term_list[0]->name,
+        'car_year' => $car_year,
+        'car_fuel' => $car_fuel
     ];
 }
 
