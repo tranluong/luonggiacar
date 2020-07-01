@@ -37,7 +37,15 @@ function luongwp_get_product_by_id( $car_id ) {
     ];
 }
 
-
+function luongwp_get_car_related($car_id, $limit = 12 ) {
+    return get_posts([
+        'post_type' => LUONGWP_PRODUCT_POST_TYPE,
+        'post_status' => 'publish',
+        'numberposts' => $limit,
+        'order' => 'ASC',
+        'post__not_in' => [$car_id]
+    ]);
+}
 
 function get_car_by_type() {
     if(!is_tax())
