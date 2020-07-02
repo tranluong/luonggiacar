@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="<?php echo LUONGWP_ASSETS; ?>css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo LUONGWP_ASSETS; ?>css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?php echo LUONGWP_ASSETS; ?>css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo LUONGWP_STATIC; ?>magnific-popup/dist/magnific-popup.css">
 
     <link rel="stylesheet" href="<?php echo LUONGWP_ASSETS; ?>css/aos.css">
 
@@ -31,7 +31,16 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/">HUNA-<span>LUONGGIACAR</span></a>
+        <?php
+        $custom_logo_id = get_theme_mod( 'custom_logo' );
+        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+        if ( has_custom_logo() ):
+            echo '<a class="navbar-brand" href="/"><img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '"></a>';
+        else:
+            echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+        endif;
+        ?>
+<!--        <a class="navbar-brand" href="/">HUNA-<span>LUONGGIACAR</span></a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>

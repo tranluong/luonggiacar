@@ -356,5 +356,13 @@
 		}
 	});
 
+    $('.car-details').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
 })(jQuery);
 

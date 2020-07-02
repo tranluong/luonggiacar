@@ -9,7 +9,14 @@ if (!empty($car)) :
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="car-details">
-                    <div class="img" style="background-image: url(<?php echo $car['car_image']; ?>);"></div>
+                    <div class="img">
+                        <?php foreach ($car['car_image'] as $image_url): ?>
+                        <a href="<?php echo $image_url; ?>">
+                            <img class="img-popup" src="<?php echo $image_url ?>">
+                        </a>
+                        <?php endforeach; ?>
+                    </div>
+
                     <div class="text text-center">
                         <span class="subheading"><?php echo $car['car_type']; ?></span>
                         <h2><?php echo $car['car_name']; ?></h2>

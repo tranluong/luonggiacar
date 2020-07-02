@@ -64,13 +64,12 @@
 
 <script src="<?php echo LUONGWP_STATIC; ?>jquery/dist/jquery.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery-migrate-3.0.1.min.js"></script>
-<script src="<?php echo LUONGWP_STATIC; ?>popper.js/dist/popper.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/bootstrap.min.js"></script>
 <script src="<?php echo LUONGWP_STATIC; ?>jquery.easing/jquery.easing.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.waypoints.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.stellar.min.js"></script>
 <script src="<?php echo LUONGWP_STATIC; ?>owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo LUONGWP_STATIC  ?>magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/aos.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/jquery.animateNumber.min.js"></script>
 <script src="<?php echo LUONGWP_ASSETS; ?>js/bootstrap-datepicker.js"></script>

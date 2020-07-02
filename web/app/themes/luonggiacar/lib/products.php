@@ -16,7 +16,7 @@ function luongwp_get_product_by_id( $car_id ) {
         return [];
     }
     $car_name = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_NAME, true);
-    $car_image = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_IMAGE, true);
+    $car_image = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_IMAGE);
     $car_capacity = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_CAPACITY, true);
     $car_transmis = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_TRANSMISS, true);
     $car_price = get_post_meta($car_id, LUONGWP_PRODUCT_CAR_PRICE, true);
