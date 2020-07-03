@@ -28,7 +28,7 @@ class LuongWP_Cars_Widget extends SingularWidget
         $items = $this->getVal( $inst, 'limit' );
         $limit = !empty($items) ? (int)$items : '-1';
         ?>
-        <section class="ftco-section">
+        <section class="" id="car">
             <div class="container-fluid px-4">
                 <div class="row justify-content-center">
                     <div class="col-md-12 heading-section text-center ftco-animate mb-5">

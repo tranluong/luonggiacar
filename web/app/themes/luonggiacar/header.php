@@ -49,6 +49,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="/" class="nav-link">Trang chủ</a></li>
                 <li class="nav-item"><a href="/#about" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="/#car" class="nav-link">Thuê xe</a></li>
                 <li class="nav-item"><a href="thu-tuc-thue-xe/" class="nav-link">Thủ tục thuê xe</a></li>
                 <li class="nav-item"><a href="bang-gia/" class="nav-link">Bảng giá</a></li>
                 <li class="nav-item"><a href="lien-he/" class="nav-link">Liên hệ</a></li>

@@ -356,6 +356,7 @@
 		}
 	});
 
+	// Display multi image
     $('.car-details').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -363,6 +364,12 @@
             enabled: true
         }
     });
+
+    // Click to redirect div tag detail
+    $('.car-wrap .img').on('click', function(){
+        var linkRedirect = $(this).data('link');
+        window.location = linkRedirect;
+	})
 
 })(jQuery);
 

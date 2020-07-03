@@ -60,7 +60,7 @@ class LuongWP_Service_Widget extends RepeaterWidget
         $title_color = $this->getVal( $inst, 'title_color' );
         $title = $this->getVal( $inst, 'title' );
         ?>
-        <section class="ftco-section services-section" id="service">
+        <section class="services-section" style="margin-top: 30px;" id="service">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12 heading-section text-center ftco-animate mb-5">

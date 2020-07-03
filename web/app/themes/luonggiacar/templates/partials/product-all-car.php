@@ -6,7 +6,7 @@ if (!empty($car)) :
 
 <div class="col-md-3">
     <div class="car-wrap ftco-animate">
-        <div class="img d-flex align-items-end" style="background-image: url(<?php echo $car['car_image'][0]; ?>);">
+        <div class="img d-flex align-items-end" data-link="<?php echo $link; ?>" style="background-image: url(<?php echo $car['car_image'][0]; ?>);">
             <div class="price-wrap d-flex">
                 <span class="rate"><?php echo $car['car_price']; ?></span>
                 <p class="from-day">

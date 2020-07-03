@@ -18,6 +18,7 @@
                     <ul class="list-unstyled">
                         <li><a href="/#about" class="py-2 d-block">Giới thiệu</a></li>
                         <li><a href="/#service" class="py-2 d-block">Dịch vụ</a></li>
+                        <li><a href="/#car" class="py-2 d-block">Thuê xe</a></li>
                         <li><a href="thu-tuc-thue-xe/" class="py-2 d-block">Thủ tục thuê xe</a></li>
                         <li><a href="bang-gia/" class="py-2 d-block">Bảng giá</a></li>
                     </ul>
