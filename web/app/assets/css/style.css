@@ -8652,6 +8652,18 @@ h1, h2, h3, h4, h5,
 .ftco-car-details .services .media-body .icon span {
   color: rgba(0, 0, 0, 0.8); }
 
+.car-detail-top {
+  padding-top: 3em;
+}
+
+.car-detail-bottom {
+  padding-bottom: 3em;
+}
+
+.car-detail-bottom .row {
+  text-align: center;
+}
+
 .ftco-car-details .services .media-body .text h3 {
   font-size: 14px !important;
   color: rgba(0, 0, 0, 0.4); }

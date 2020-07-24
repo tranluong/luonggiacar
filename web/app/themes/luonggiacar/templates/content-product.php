@@ -5,7 +5,7 @@ if (!empty($car)) :
 
 ?>
 
-<section class="ftco-section ftco-car-details">
+<section class="ftco-car-details car-detail-top">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
@@ -105,8 +105,14 @@ if (!empty($car)) :
     </div>
 </section>
 <?php endif; ?>
-<section>
-    <a href="" class="btn btn-danger btn-outline-black ml-1" data-toggle="modal" data-target="#myModal">Đặt xe ngay</a>
+<section class="car-detail-bottom">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="" class="btn btn-danger btn-outline-black ml-1" data-toggle="modal" data-target="#myModal">Đặt xe</a>
+            <strong class="dl-block-text">hoặc</strong>
+            <a href="tel:<?php echo get_option( 'company_phone_web' ); ?>" style="animation-duration: 1s;" class="btn btn-primary ml-1">Gọi cho chúng tôi</a>
+        </div>
+    </div>
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
